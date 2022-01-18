@@ -7,8 +7,15 @@
              x:Class="FirstMVVMProjDice.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Login" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="Enter your Username"/>
+            <Entry Placeholder="Username" Text="{Binding Username}"/>
+            <Label Text="Enter your Password" />
+            <Entry Placeholder="Password"  Text="{Binding Password}"/>
+            <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="FillAndExpand"></Button>
+            <Label Text="{Binding LoginInfo}" />
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

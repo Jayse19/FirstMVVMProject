@@ -12,10 +12,13 @@ namespace FirstMVVMProjDice.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        private UserLoginViewModel userLoginViewModel;
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+            //this.BindingContext = new LoginViewModel();
+            userLoginViewModel = new UserLoginViewModel();
+            this.BindingContext = userLoginViewModel;
         }
     }
 }
