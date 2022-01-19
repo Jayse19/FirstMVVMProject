@@ -13,17 +13,29 @@ namespace FirstMVVMProjDice.ViewModels
 
         public UserLoginViewModel()
         {
-            LoginCommand = new Command(loginCommand);
+            LoginCommand = new Command(loginCommand_Execute, loginCommand_CanExecute);
         }
         public string Username
         {
             get => username;
-            set { SetProperty(ref username, value); }
+            set 
+            { 
+                if(SetProperty(ref username, value))
+                {
+                    LoginCommand?.ChangeCanExecute();
+                } 
+            }
         }
         public string Password
         {
             get => password;
-            set { SetProperty(ref password, value); }
+            set
+            {
+                if (SetProperty(ref password, value))
+                {
+                    LoginCommand?.ChangeCanExecute();
+                }
+            }
         }
         public string LoginInfo
         {
@@ -31,9 +43,13 @@ namespace FirstMVVMProjDice.ViewModels
             set { SetProperty(ref loginInfo, value);}
         }
         public Command LoginCommand { get; set; }
-        private void loginCommand()
+        private void loginCommand_Execute()
         {
             LoginInfo = $"Username: {Username} \nPassword: {Password}";
+        }
+        private bool loginCommand_CanExecute()
+        {
+            return Username != null && Password != null;
         }
     }
 }
