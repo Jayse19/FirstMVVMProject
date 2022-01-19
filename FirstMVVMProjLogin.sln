@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjDice.UWP", "FirstMVVMProjDice\FirstMVVMProjDice.UWP\FirstMVVMProjDice.UWP.csproj", "{3C42CABC-5290-458A-9D15-D35ED7A1F3E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjLogin.UWP", "FirstMVVMProjDice\FirstMVVMProjDice.UWP\FirstMVVMProjLogin.UWP.csproj", "{3C42CABC-5290-458A-9D15-D35ED7A1F3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjDice.Android", "FirstMVVMProjDice\FirstMVVMProjDice.Android\FirstMVVMProjDice.Android.csproj", "{E43DA957-3D2F-4C19-97DE-6C953E25CED9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjLogin.Android", "FirstMVVMProjDice\FirstMVVMProjDice.Android\FirstMVVMProjLogin.Android.csproj", "{E43DA957-3D2F-4C19-97DE-6C953E25CED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjDice.iOS", "FirstMVVMProjDice\FirstMVVMProjDice.iOS\FirstMVVMProjDice.iOS.csproj", "{46CB6159-8F28-4DC1-8D8D-3DF285CAD39D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjLogin.iOS", "FirstMVVMProjDice\FirstMVVMProjDice.iOS\FirstMVVMProjLogin.iOS.csproj", "{46CB6159-8F28-4DC1-8D8D-3DF285CAD39D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstMVVMProjDice", "FirstMVVMProjDice\FirstMVVMProjDice\FirstMVVMProjDice.csproj", "{20706D78-8F19-4F14-9986-34448A33DFC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstMVVMProjLogin", "FirstMVVMProjDice\FirstMVVMProjDice\FirstMVVMProjLogin.csproj", "{20706D78-8F19-4F14-9986-34448A33DFC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

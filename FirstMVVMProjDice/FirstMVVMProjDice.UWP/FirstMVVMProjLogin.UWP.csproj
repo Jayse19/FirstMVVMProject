@@ -148,13 +148,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FirstMVVMProjDice\FirstMVVMProjDice.csproj">
-      <Project>{4124A8AB-2068-4C52-96EE-EFCA0E54A794}</Project>
-      <Name>FirstMVVMProjDice</Name>
+    <ProjectReference Include="..\FirstMVVMProjDice\FirstMVVMProjLogin.csproj">
+      <Project>{20706D78-8F19-4F14-9986-34448A33DFC5}</Project>
+      <Name>FirstMVVMProjLogin</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

@@ -137,9 +137,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\FirstMVVMProjDice\FirstMVVMProjDice.csproj">
-      <Project>{4124A8AB-2068-4C52-96EE-EFCA0E54A794}</Project>
-      <Name>FirstMVVMProjDice</Name>
+    <ProjectReference Include="..\FirstMVVMProjDice\FirstMVVMProjLogin.csproj">
+      <Project>{20706D78-8F19-4F14-9986-34448A33DFC5}</Project>
+      <Name>FirstMVVMProjLogin</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
