@@ -1,4 +1,5 @@
 ﻿using FirstMVVMProjDice.ViewModels;
+using FirstMVVMProjLogin.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace FirstMVVMProjDice.Views
         {
             InitializeComponent();
             //this.BindingContext = new LoginViewModel();
-            userLoginViewModel = new UserLoginViewModel();
+            userLoginViewModel = new UserLoginViewModel(new XamarinEssentialsClipBoardService());
             this.BindingContext = userLoginViewModel;
         }
     }

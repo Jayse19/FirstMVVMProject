@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstMVVMProjLogin.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -10,10 +11,18 @@ namespace FirstMVVMProjDice.ViewModels
         private string loginInfo;
         private string username;
         private string password;
+        private readonly IClipBoardService clipBoardService;
 
-        public UserLoginViewModel()
+        public UserLoginViewModel(IClipBoardService clipBoardService)
         {
+            this.clipBoardService = clipBoardService;
             LoginCommand = new Command(loginCommand_Execute, loginCommand_CanExecute);
+
+            GetClipBoardContentCommand = new Command(() =>
+            {
+                var contents = clipBoardService.GetContentsFromTheClipBoardAsync().Result;
+                LoginInfo = contents;
+            });
         }
         public string Username
         {
@@ -51,5 +60,7 @@ namespace FirstMVVMProjDice.ViewModels
         {
             return Username != null && Password != null;
         }
+
+        public Command GetClipBoardContentCommand { get; }
     }
 }
